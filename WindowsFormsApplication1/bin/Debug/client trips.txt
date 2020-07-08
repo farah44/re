@@ -1,0 +1,6 @@
+2 14 cairo alexandria 100 7 12 2018
+3 11 wahaa aswan 500 8 12 2018
+4 12 helioplis gouna 1000 14 12 2018
+4 12 gona wa7a 80 26 12 2018
+5 13 nasrcity newcairo 80 15 12 2018
+6 15 newcairo nasrcity 90 16 12 2018

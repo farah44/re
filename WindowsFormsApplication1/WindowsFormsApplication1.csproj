@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C83B1E04-1A9C-4941-9479-194C5E70E6F8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs" />
+    <Compile Include="Cars.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="Driver.cs" />
+    <Compile Include="Form0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form0.Designer.cs">
+      <DependentUpon>Form0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Load.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Requests.cs" />
+    <Compile Include="Trips.cs" />
+    <EmbeddedResource Include="Form0.resx">
+      <DependentUpon>Form0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5c22a4951c1573614135731.gif" />
+    <None Include="Resources\2043b3a5f1998476d50f9e83d1f8ddcb2.gif" />
+    <None Include="Resources\id-card1.png" />
+    <None Include="Resources\tenor.gif" />
+    <None Include="Resources\money %282%29.png" />
+    <None Include="Resources\Capture22.png" />
+    <None Include="Resources\Capture21.png" />
+    <None Include="Resources\Capture2.png" />
+    <None Include="Resources\5c22a4951c157361413573.gif" />
+    <None Include="Resources\2043b3a5f1998476d50f9e83d1f8ddcb1.gif" />
+    <None Include="Resources\icon %284%29.png" />
+    <None Include="Resources\x-mark.png" />
+    <None Include="Resources\calendar.png" />
+    <None Include="Resources\color-palette.png" />
+    <None Include="Resources\countdown.png" />
+    <None Include="Resources\car.png" />
+    <None Include="Resources\gear.png" />
+    <None Include="Resources\icon %282%291.png" />
+    <None Include="Resources\question %282%29.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\id-card.png" />
+    <None Include="Resources\wage.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\file3.png" />
+    <None Include="Resources\x-mark %281%29.png" />
+    <None Include="Resources\clock.png" />
+    <None Include="Resources\world.png" />
+    <None Include="Resources\collaboration.png" />
+    <None Include="Resources\reply %281%294.png" />
+    <None Include="Resources\Capture.PNG" />
+    <None Include="Resources\skill.png" />
+    <None Include="Resources\reply %281%295.png" />
+    <None Include="Resources\icon %282%292.png" />
+    <None Include="Resources\destination.png" />
+    <None Include="Resources\road.png" />
+    <None Include="Resources\push-pin.png" />
+    <None Include="Resources\maps-and-flags.png" />
+    <None Include="Resources\pin.png" />
+    <None Include="Resources\road %281%29.png" />
+    <None Include="Resources\2043b3a5f1998476d50f9e83d1f8ddcb.gif" />
+    <Content Include="carhorn.wav" />
+    <None Include="Resources\taxi-background.jpg" />
+    <None Include="Resources\boss %281%29.png" />
+    <None Include="Resources\lock %281%29.png" />
+    <None Include="Resources\reply %282%29.png" />
+    <None Include="Resources\icon %281%29.png" />
+    <None Include="Resources\icon %282%29.png" />
+    <None Include="Resources\driver %281%29.png" />
+    <None Include="Resources\manager.png" />
+    <None Include="Resources\rent-a-car.png" />
+    <None Include="Resources\driver %281%291.png" />
+    <None Include="Resources\file.png" />
+    <None Include="Resources\reply %281%29.png" />
+    <None Include="Resources\reply %281%291.png" />
+    <None Include="Resources\reply %281%292.png" />
+    <None Include="Resources\question.png" />
+    <None Include="Resources\question %281%29.png" />
+    <None Include="Resources\file1.png" />
+    <None Include="Resources\reply %281%293.png" />
+    <None Include="Resources\taxi.png" />
+    <None Include="Resources\file2.png" />
+    <None Include="Resources\taxi %282%29.png" />
+    <None Include="Resources\taxi %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
